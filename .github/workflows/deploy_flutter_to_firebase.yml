@@ -40,8 +40,8 @@ jobs:
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FLUTTER_FIREBASE_CI }}'
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MUSH_FLUTTER }}
           channelId: live
-          projectId: flutter-firebase-ci
+          projectId: mush-flutter
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
